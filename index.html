@@ -1,1 +1,29 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <button id="minusButton" onclick="zoomOut()"><span class="fa fa-minus"></span></button>
+    <button id="plusButton" onclick="zoomIn()"><span class="fa fa-plus"></span></button>
+    <!-- <button onclick="toggleFullScreen()"><span class="fa fa-car"></span></button> -->
+    <div id="map" draggable="true" ondragstart="startPan(event)" onmouseup="stopPan(event)"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgN6iyRx0fheO1BS9OXRv8DnfLkpq3_4k&callback=initMap"
+    async defer></script>
+    <!-- Eget -->
+    <script src="map.js"></script>
+    <script src="interaction.js"></script>
+  </body>
+</html>
