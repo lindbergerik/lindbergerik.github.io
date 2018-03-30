@@ -13,7 +13,8 @@
     <button id="minusButton" onclick="zoomOut()"><span class="fa fa-minus"></span></button>
     <button id="plusButton" onclick="zoomIn()"><span class="fa fa-plus"></span></button>
     <!-- <button onclick="toggleFullScreen()"><span class="fa fa-car"></span></button> -->
-    <div id="map" draggable="true" ondragstart="startPan(event)" onmouseup="stopPan(event)"></div>
+    <!-- <div id="map"></div> -->
+    <div id="map" draggable="true" ontouchstart="startPan(event)" ontouchend="stopPan(event)"></div>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>

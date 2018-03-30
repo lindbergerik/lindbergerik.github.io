@@ -8,6 +8,7 @@ function zoomIn() {
 	map.setZoom(map.zoom + 1);
 }
 
+// Panning by drag
 var startX = 0;
 var startY = 0;
 
