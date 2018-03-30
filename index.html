@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
+    <div id="map"></div>
+    <!-- <div id="map" draggable="true" ontouchstart="startPan(event)" ontouchend="stopPan(event)"></div> -->
     <button id="minusButton" onclick="zoomOut()"><span class="fa fa-minus"></span></button>
     <button id="plusButton" onclick="zoomIn()"><span class="fa fa-plus"></span></button>
-    <!-- <button onclick="toggleFullScreen()"><span class="fa fa-car"></span></button> -->
     <button id="leftButton" onclick="panLeft()"><span class="fa fa-angle-left"></span></button>
     <button id="upButton" onclick="panUp()"><span class="fa fa-angle-up"></span></button>
     <button id="downButton" onclick="panDown()"><span class="fa fa-angle-down"></span></button>
     <button id="rightButton" onclick="panRight()"><span class="fa fa-angle-right"></span></button>
-    <div id="map"></div>
-    <!-- <div id="map" draggable="true" ontouchstart="startPan(event)" ontouchend="stopPan(event)"></div> -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
