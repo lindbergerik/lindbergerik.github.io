@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>MAP APP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="mobile-web-app-capable" content="yes">
@@ -12,12 +12,16 @@
   <body>
     <div id="map"></div>
     <!-- <div id="map" draggable="true" ontouchstart="startPan(event)" ontouchend="stopPan(event)"></div> -->
-    <button id="minusButton" onclick="zoomOut()"><span class="fa fa-minus"></span></button>
-    <button id="plusButton" onclick="zoomIn()"><span class="fa fa-plus"></span></button>
-    <button id="leftButton" onclick="panLeft()"><span class="fa fa-angle-left"></span></button>
-    <button id="upButton" onclick="panUp()"><span class="fa fa-angle-up"></span></button>
-    <button id="downButton" onclick="panDown()"><span class="fa fa-angle-down"></span></button>
-    <button id="rightButton" onclick="panRight()"><span class="fa fa-angle-right"></span></button>
+    <row>
+        <button id="minusButton" onclick="zoomOut()"><span class="fa fa-minus"></span></button>
+        <button id="plusButton" onclick="zoomIn()"><span class="fa fa-plus"></span></button>
+    </row>
+    <row>
+        <button id="leftButton" onclick="panLeft()"><span class="fa fa-angle-left"></span></button>
+        <button id="upButton" onclick="panUp()"><span class="fa fa-angle-up"></span></button>
+        <button id="downButton" onclick="panDown()"><span class="fa fa-angle-down"></span></button>
+        <button id="rightButton" onclick="panRight()"><span class="fa fa-angle-right"></span></button>
+    </row>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
