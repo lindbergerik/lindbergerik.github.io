@@ -29,7 +29,7 @@ function initMap() {
 	this.marker3 = new google.maps.Marker( {
 		position: coordsErik,
 		map: map,
-		icon: erik.jpg,
+		icon: 'erik.jpg',
 		title: 'Hannas!'
 	});
 
@@ -37,7 +37,7 @@ function initMap() {
 	this.marker4 = new google.maps.Marker( {
 		position: coordsSebbe,
 		map: map,
-		icon: sebbe.jpg,
+		icon: 'sebbe.jpg',
 		title: 'Hirschen!'
 	});
 
