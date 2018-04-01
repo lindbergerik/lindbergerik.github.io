@@ -46,7 +46,7 @@ function initMap() {
 	    origin: new google.maps.Point(0,0), // origin
 	    anchor: new google.maps.Point(0, 0) // anchor
 	};
-	var coordsSebbe = {lat: 59.312154, lng: 18.079739};
+	var coordsSebbe = {lat: 59.341122, lng: 18.058018};
 	this.marker4 = new google.maps.Marker( {
 		position: coordsSebbe,
 		map: map,
