@@ -10,9 +10,8 @@ function initMap() {
 		draggable: false
 	});
 
-	var coordinates = {lat: 59.336559, lng: 18.062660};
 	this.marker1 = new google.maps.Marker( {
-		position: coordinates,
+		position: {lat: 59.336559, lng: 18.062660},
 		map: map,
 		draggable: true,
 		animation: google.maps.Animation.DROP,
@@ -25,6 +24,23 @@ function initMap() {
 		animation: google.maps.Animation.BOUNCE,
 		title: 'HOLA'
 	});
+
+	var coordsErik = {lat: 59.312154, lng: 18.079739};
+	this.marker3 = new google.maps.Marker( {
+		position: coordsErik,
+		map: map,
+		icon: erik.jpg,
+		title: 'Hannas!'
+	});
+
+	var coordsSebbe = {lat: 59.312154, lng: 18.079739};
+	this.marker4 = new google.maps.Marker( {
+		position: coordsSebbe,
+		map: map,
+		icon: sebbe.jpg,
+		title: 'Hirschen!'
+	});
+
 }
 
 function geoLocation() {
@@ -59,6 +75,10 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
-function goThere1() {
-	map.setCenter({lat: 59.336559, lng: 18.062660});
+function goErik() {
+	map.setCenter({lat: 59.312154, lng: 18.079739});
+}
+
+function goSebbe() {
+	map.setCenter({lat: 59.341122, lng: 18.058018});
 }
