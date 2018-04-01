@@ -1,3 +1,10 @@
+var icon1 = {
+    url: "https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/22339069_10210606663471433_2200775455751115680_o.jpg?_nc_cat=0&oh=51350e94cfb2b4390bd5d8b4ff2c1945&oe=5B737F64", // url
+    scaledSize: new google.maps.Size(1, 1), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+};
+
 var map, infowindow;
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
@@ -29,7 +36,7 @@ function initMap() {
 	this.marker3 = new google.maps.Marker( {
 		position: coordsErik,
 		map: map,
-		icon: 'erik.jpg',
+		icon: icon1,
 		title: 'Hannas!'
 	});
 
@@ -37,7 +44,7 @@ function initMap() {
 	this.marker4 = new google.maps.Marker( {
 		position: coordsSebbe,
 		map: map,
-		icon: 'sebbe.jpg',
+		// icon: 'sebbe.jpg',
 		title: 'Hirschen!'
 	});
 
