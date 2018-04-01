@@ -27,8 +27,8 @@ function initMap() {
 	});
 
 	var icon1 = {
-	    url: "https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/22339069_10210606663471433_2200775455751115680_o.jpg?_nc_cat=0&oh=51350e94cfb2b4390bd5d8b4ff2c1945&oe=5B737F64", // url
-	    scaledSize: new google.maps.Size(1, 1), // scaled size
+	    url: "https://github.com/lindbergerik/lindbergerik.github.io/blob/master/erik.jpg?raw=true", // url
+	    scaledSize: new google.maps.Size(50, 50), // scaled size
 	    origin: new google.maps.Point(0,0), // origin
 	    anchor: new google.maps.Point(0, 0) // anchor
 	};
@@ -40,11 +40,17 @@ function initMap() {
 		title: 'Hannas!'
 	});
 
+	var icon2 = {
+	    url: "https://github.com/lindbergerik/lindbergerik.github.io/blob/master/sebbe.jpg?raw=true", // url
+	    scaledSize: new google.maps.Size(50, 50), // scaled size
+	    origin: new google.maps.Point(0,0), // origin
+	    anchor: new google.maps.Point(0, 0) // anchor
+	};
 	var coordsSebbe = {lat: 59.312154, lng: 18.079739};
 	this.marker4 = new google.maps.Marker( {
 		position: coordsSebbe,
 		map: map,
-		// icon: 'sebbe.jpg',
+		icon: icon2,
 		title: 'Hirschen!'
 	});
 
