@@ -25,8 +25,11 @@ function initMap() {
 		animation: google.maps.Animation.BOUNCE,
 		title: 'HOLA'
 	});
+}
 
+function geoLocation() {
 	//GEOLOCATION
+	console.log("HELLO");
 	infoWindow = new google.maps.InfoWindow;
 	// Try HTML5 geolocation.
 	if (navigator.geolocation) {
